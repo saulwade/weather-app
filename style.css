@@ -22,8 +22,8 @@ body {
 
 .title {
     color: lightskyblue;
-    font-size: 21px;
-    font-weight: bold;
+    font-size: 26px;
+    font-weight: 5000px;
     padding: 15px 14px;
     display: flex;
     align-items: center;
@@ -38,7 +38,6 @@ body {
     border: none;
     background-color: lightskyblue;
     color: white;
-    font-weight: bold;
     border-radius: 7px;
 }
 
@@ -55,6 +54,7 @@ body {
 }
 
 .second {
+    display: none;
     margin: 20px 25px 30px;
 }
 
@@ -69,5 +69,48 @@ body {
     font-size: 16px;
 }
 
+.separador {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.separador::before {
+    content: "or";
+    background: white;
+    padding: 0 15px;
+    font-size: 19px;
+    color: lightgray;
+}
 
+.infotext {
+    display: none;
+    font-size: 18px;
+    background-color: lightcoral;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.error {
+    display: block;
+    color: rgb(201, 81, 81);
+    border: 1px solid lightgray;
+    background-color: #f8d7da;
+}
+
+.pendiente {
+    display: block;
+    color: rgb(61, 95, 125);
+    border: 1px solid lightskyblue;
+    background: #d1ecf1;
+}
+
+.input:is(:focus, :valid) {
+    border: 2px solid rgb(0, 142, 189);
+}
